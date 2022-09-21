@@ -1,0 +1,82 @@
+header{
+    text-align: center;
+}
+
+h1{
+    background-color: #A6D1D8;
+}
+
+.logo{
+    width: 200px;
+}
+
+nav{
+    background: gray;
+}
+
+nav li{
+    display: inline;
+    padding-right: 15px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav li:hover{
+    color: wheat;
+}
+
+.imagen-main{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.nosotros{
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 10px;
+}
+
+.nosotros h2{
+    font-family: 'Montserrat Classic', sans-serif;
+    margin-left: 4%;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+
+.texto-nosotros{
+    margin: 0px 20px 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    display: inline;
+}
+
+button{
+    margin-left: 50%;
+    background: #A6D1D8;
+    border: none;
+    border-radius: 15px;
+}
+
+.categorias{
+    display: flex;
+    margin-left: 20%;
+}
+
+.destinos, .actividades, .tips{
+    padding: 30px;
+    width: 20%;
+    height: 158px;
+    background-color: antiquewhite;
+    margin-right: 5%;
+    text-align: center;
+}
+
+
+
+footer, .logo-footer{
+    background-color: #0A154F;
+    text-align: center;
+    height: 200px;
+}
+
