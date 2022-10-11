@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,61 +14,82 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="encabezado">
-        <h1><img src="imagenes/logo-header.png" class="logo" /></h
+    <header class="header">
+      <div class="contenedor-header">
+        <div class="encabezado">
+          <h1><img src="imagenes/logo-header.png" class="logo" /></h>
+        </div>
+  
+        <div class="menu-navegacion">
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Destinos</li>
+              <li>Actividades</li>
+              <li>Nosotros</li>
+              <li>Contacto</li>
+            </ul>
+          </nav>
+        </div>
       </div>
-
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Destinos</li>
-          <li>Actividades</li>
-          <li>Tips</li>
-          <li>Nosotros</li>
-          <li>Contacto</li>
-        </ul>
-      </nav>
     </header>
 
     <main>
-      <img src="imagenes/imagen-main.jpg" alt="imagen-patagonia" class="imagen-main" />
+      <div class="contenedor-main">
+        <img src="imagenes/imagen-main.jpg" alt="imagen-patagonia" class="imagen-main"/>
 
-      <div class="nosotros">
+        <div class="nosotros">
 
-        <div class="texto-nosotros">
-          <h2>SOBRE NOSOTROS</h2>
+          <div class="texto-nosotros">
+            <h2>SOBRE NOSOTROS</h2>
 
-          <p>Turismo patagonia nace 
-          para mostrar
-          el amor que tenemos por nuestra hermosa patagonia e incentivar a mas viajeros para que la conozcan y te enamoren de ella ... </p>
+            <p>Turismo patagonia nace 
+            para mostrar
+            el amor que tenemos por nuestra hermosa patagonia e incentivar a mas viajeros para que la conozcan y se enamoren de ella ... </p>
+          </div>
+
+          <div class="boton">
+            <button>Quiero saber más</button>
+          </div>
         </div>
+
+  
+          <div class="contenedor-cards">
+            <div class="card">
+              <img src="imagenes/imagen-destinos.jpg" >
+              <h2>Destinos</h2>
+              <p>Descubre los mejores destinos de la Patagonia Argentina</p>
+              <a href="#">Leer más</a>
+            </div>
+            <div class="card">
+              <img src="imagenes/imagen-actvidades.jpg">  
+              <h2>Actividades</h2>
+              <p>Estas buscando actividades para tu viaje? Encontrá las mejores</p>
+              <a href="#">Leer más</a>
+            </div>
+        
       </div>
-
-      <button>Quiero saber más</button>
-
-     
-
-      <div class="categorias">
-        <div class="destinos">
-          <span><i class="fa-solid fa-plane-departure"></i></span>
-          DESTINOS
-        </div>
-        <div class="actividades">
-
-          <span><i class="fa-solid fa-person-skiing"></i></span>
-          ACTIVIDADES
-        </div>
-        <div class="tips">
-          <span><i class="fa-solid fa-lightbulb-on"></i></span>
-          TIPS
-        </div>
-      </div>
-
+      
+  
+   
     </main>
 
-    <footer>
-        <img src="imagenes/logo-footer.png" alt="logo-footer" class="logo-footer">
+    <footer class="footer">
+        <div class="contenedor-footer">
+          <img src="imagenes/logo-footer.png" alt="logo-footer" class="logo-footer">
+          <div class="redes">
+            <div class="icono-redes">
+              <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+            <div class="icono-redes">
+              <span><i class="fa-brands fa-twitter"></i></span>
+            </div>
+            <div class="icono-redes">
+              <span><i class="fa-brands fa-tiktok"></i></span>
+            </div>
+          </div>
+        </div>
+        
     </footer>
   </body>
 </html>
