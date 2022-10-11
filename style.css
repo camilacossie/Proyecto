@@ -22,7 +22,7 @@ body{
     font-size: 25px;
 }
 
-.menu-navegacion li:hover{
+.menu-navegacion li a:hover{
     color: wheat;
 }
 
@@ -99,6 +99,11 @@ body{
 
 .contenedor-cards .card p{
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #0A154F;    
 }
 
 .contenedor-footer{
