@@ -135,3 +135,38 @@ a {
     color: #A6D1D8;
 }
 
+/*Estilo paginas actividades y destinos*/
+
+.titulo h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0 40px 0;
+    font-weight: bold;
+}
+
+.contenedor .actividad{
+    padding-bottom: 20px;
+    margin-left: 15%;
+    width: 50%;
+    transition: 0.2s;
+}
+
+.contenedor .actividad h2{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.contenedor .actividad img {
+    width: 330px;
+    height: 220px;
+    padding-bottom: 20px;
+}
+
+.contenedor .actividad:hover{
+    margin-left: 20%;
+
+}
+
+
+
+
