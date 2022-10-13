@@ -89,21 +89,25 @@ body{
 .contenedor-cards .card img{
     width: 330px;
     height: 220px;
+    padding-bottom: 10px;
 }
 
 .contenedor-cards .card h2{
     text-align: center;
     font-weight: 600;
     font-size: 25px;
+    padding-bottom: 25px;
 }
 
 .contenedor-cards .card p{
     text-align: center;
+    padding-bottom: 30px;
 }
 
 a {
     text-decoration: none;
-    color: #0A154F;    
+    color: #0A154F;
+    
 }
 
 .contenedor-footer{
@@ -135,7 +139,7 @@ a {
     color: #A6D1D8;
 }
 
-/*Estilo paginas actividades y destinos*/
+/*Comienza estilo pagina actividades*/
 
 .titulo h1{
     text-align: center;
@@ -151,9 +155,14 @@ a {
     transition: 0.2s;
 }
 
+.contenedor .actividad:hover{
+    margin-left: 20%;
+}
+
 .contenedor .actividad h2{
     font-size: 25px;
     padding-bottom: 5px;
+    flex-wrap: wrap;
 }
 
 .contenedor .actividad img {
@@ -162,10 +171,52 @@ a {
     padding-bottom: 20px;
 }
 
-.contenedor .actividad:hover{
-    margin-left: 20%;
-
+i{
+    padding-right: 10px;
 }
+
+.titulo-actividades { 
+    display: flex;
+    align-items: center;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*Comienza estilo pagina Destinos*/
+
+.contenedor .destino{
+    padding-bottom: 20px;
+    margin-left: 15%;
+    width: 50%;
+    transition: 0.2s;
+}
+
+.contenedor .destino:hover{
+    margin-left: 20%;
+}
+
+.contenedor .destino h2{
+    font-size: 25px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+.contenedor .destino img {
+    width: 330px;
+    height: 220px;
+    padding-bottom: 20px;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 
 
 
