@@ -38,26 +38,26 @@
       <div class="titulo">
         <h1>Contacto</h1>
         <div class="formulario">
-          <form action="" method="post">
+          <form action="" onsubmit="return validacion();">
             <ul>
              <li>
                <label for="name">Nombre:</label>
-               <input type="text" id="name" name="user_name">
+               <input type="text" id="name" ><p id="menssage1"></p> 
+               
              </li>
              <li>
                <label for="mail">Correo electrónico:</label>
-               <input type="email" id="mail" name="user_mail">
+               <input type="email" id="email" ><p id="menssage2"></p> 
              </li>
              <li>
                <label for="msg">Mensaje:</label>
-               <textarea id="msg" name="user_message"></textarea>
+               <textarea id="msg"></textarea><p id="menssage3"></p> 
              </li>
             </ul>
             <li class="boton-principal">
               <button type="submit">Enviar</button>
             </li>
            </form>
-
 
         </div>
       </div>
@@ -81,5 +81,6 @@
         </div>
         
     </footer>
+<script src="/validacion.js"></script>
   </body>
 </html>
