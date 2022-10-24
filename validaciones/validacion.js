@@ -12,16 +12,29 @@ function validacion() {
     elemento = document.getElementById("name");
     elemento.focus(); }
   
-  if (valorEmail === null || valorEmail.length === 0) {
+  if (valorEmail === null || valorEmail.length === 0 ) {
     document.getElementById("menssage2").innerHTML =
       "Campo obligatorio para continuar";
     elemento = document.getElementById("email");
     elemento.focus();
 }
-  
+if (valorEmail.length > 0 && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(valorEmail)) {
+  document.getElementById("menssage2").innerHTML =
+    "Ingresar Email Valido";
+  elemento = document.getElementById("email");
+  elemento.focus();
+  return false;
+}
   if (valorMenssage === null || valorMenssage.length === 0) {
     document.getElementById("menssage3").innerHTML =
       "Campo obligatorio para continuar";
+    elemento = document.getElementById("msg");
+    elemento.focus();
+    return false;
+  }
+  if (valorMenssage.length < 50 ) {
+    document.getElementById("menssage3").innerHTML =
+      "El mensaje debe contener mas de 50 caracteres";
     elemento = document.getElementById("msg");
     elemento.focus();
     return false;
