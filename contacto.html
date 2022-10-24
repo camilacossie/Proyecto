@@ -39,27 +39,28 @@
       <div class="titulo">
         <h1>Contacto</h1>
         <div class="formulario">
-          <form action="" onsubmit="return validacion();" id="form-contacto">
+          <form action="https://formspree.io/f/mzbwjzln"
+          method="POST" onsubmit="return validacion() ; return handlesubmit ();" id="form" name="form">
             <ul>
              <li>
                <label for="name">Nombre:</label>
-               <input type="text" id="name" ><p id="menssage1"></p> 
+               <input type="text" id="name" name="name"><p id="menssage1"></p> 
                
              </li>
              <li>
                <label for="mail">Correo electrónico:</label>
-               <input type="email" id="email" ><p id="menssage2"></p> 
+               <input type="email" id="email" name="mail"><p id="menssage2"></p> 
              </li>
              <li>
                <label for="msg">Mensaje:</label>
-               <textarea id="msg"></textarea><p id="menssage3"></p> 
+               <textarea id="msg" name="msg"></textarea><p id="menssage3"></p> 
              </li>
             </ul>
             <li class="boton-principal">
               <button type="submit">Enviar</button>
             </li>
            </form>
-
+<a href="mailto:fiocchiv@gmail.com" id="idform"></a>
         </div>
       </div>
         
@@ -83,5 +84,6 @@
         
     </footer>
 <script src="/validaciones/validacion.js"></script>
+<script src="/envioForm/envioForm.js"></script>
   </body>
 </html>
