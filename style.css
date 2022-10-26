@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
 .contenedor-header{
     display: flex;
     text-align: center;
@@ -8,12 +9,16 @@ body{
     align-items: center;
     justify-content: space-between;
     
+        
 }
 
 .logo{
     width: 125px;
     display: flex;
     margin-left: 25px;
+}
+.logo:hover{
+    transform: translateY(-15px);
 }
 
 .menu-navegacion li{
@@ -26,10 +31,73 @@ body{
     color: wheat;
 }
 
+/* estilo menu hamburguesa */
+#hamburguesa, #hamb-menu{
+display: none;
+}
+
+@media only screen and (max-width: 720px){
+    #hamburguesa:not(:checked) ~ .menu-navegacion{
+        display: none;
+    }
+    #hamburguesa:checked ~ .menu-navegacion{
+        display: block;
+    }
+    #hamb-menu{
+        display: block;
+        color: white;
+        font-weight: 100;
+        font-size: 30px;
+        margin-right: 20px;
+        z-index: 9999;
+    }
+
+    #hamb-menu:hover{
+        color: #068ca1;
+    }
+
+    #menu-cerrar{
+        display: none;
+    }
+
+    #hamburguesa:checked ~ label #menu-abrir{
+        display: none;
+    }
+
+    #hamburguesa:checked ~ label #menu-cerrar{
+        display: block;
+        position: absolute;
+        margin-left: 40%;
+    }
+
+    header .menu-navegacion nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: #A6D1D8;
+        padding-top: 2px;
+        padding-right: 20px;
+        opacity: 0.9;
+        color: #0A154F;
+    }
+
+    header .menu-navegacion nav ul a{
+        color: #0A154F;
+    }
+
+    header .menu-navegacion nav ul li{
+        display: block;
+        text-align: right;
+    }
+}
+
+
 .imagen-main{
     width: 100%;
     padding-bottom: 50px;
 }
+
 
 .nosotros{
     width: 70%;
@@ -123,6 +191,10 @@ a {
     justify-content: center;
 }
 
+.logo-footer:hover{
+    transform: translateX(15px);
+}
+
 .redes{
     color: antiquewhite;
     display: flex;
@@ -187,16 +259,24 @@ i{
 }
 
 /*Comienza estilo pagina Destinos*/
-
+#contenedor-destinos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1280px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 48px;
+    row-gap: 48px;
+        
+}
 .contenedor .destino{
-    padding-bottom: 20px;
-    margin-left: 15%;
-    width: 50%;
-    transition: 0.2s;
+    max-width: 400px;
+    
 }
 
 .contenedor .destino:hover{
-    margin-left: 20%;
+    transform: scale(122%);
 }
 
 .contenedor .destino h2{
@@ -210,6 +290,7 @@ i{
     height: 220px;
     padding-bottom: 20px;
 }
+
 
 .mapa{
     display: flex;
@@ -268,9 +349,3 @@ form {
   button{
     list-style: none;
   }
-  
-
-
-
-
-
