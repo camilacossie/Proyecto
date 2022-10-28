@@ -3,6 +3,7 @@ const $form = document.querySelector('#form')
 $form.addEventListener('submit', handlesubmit)
 
 async function handlesubmit (event) {
+    
     event.preventDefault()
     const form = new FormData(this)
     const response = await fetch(this.action , {
@@ -12,8 +13,8 @@ async function handlesubmit (event) {
             'Accept': 'application/json'
         }
     })
-    if(response.ok){
+    if(response.ok && validacion()){
         this.reset()
-        alert('Gracias por contactarnos, le responderemos a la brevedad')
+        document.location.href='envioForm/saludo.html'
     }
 }

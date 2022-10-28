@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css/reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/validaciones/styleValidaciones.css"/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/0474b9bded.js" crossorigin="anonymous"></script>
-    <title>Turismo Patagonia</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="contenedor-header">
-        <div class="encabezado">
-          <h1><img src="imagenes/logo-header.png" class="logo" /></h>
-        </div>
-  
-        <div class="menu-navegacion">
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="destinos.html">Destinos</a></li>
-              <li><a href="actividades.html">Actividades</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
 
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css/reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/validaciones/styleValidaciones.css" />
+  <link rel="stylesheet" href="envioForm/saludo.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+
+  <title>Turismo Patagonia</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="contenedor-header">
+      <div class="encabezado">
+        <h1><img src="imagenes/logo-header.png" class="logo" /></h>
+      </div>
+
+      <div class="menu-navegacion">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="contacto-div">
       <div class="titulo">
         <h1>Contacto</h1>
         <div class="formulario">
-          <form action="https://formspree.io/f/mzbwjzln"
-          method="POST" onsubmit="return validacion() ; return handlesubmit ();" id="form" name="form">
+          <form action="https://formspree.io/f/mzbwjzln" method="POST" onsubmit="return validacion()  ; return handlesubmit();" id="form"
+            name="form">
             <ul>
-             <li>
-               <label for="name">Nombre:</label>
-               <input type="text" id="name" name="name"><p id="menssage1"></p> 
-               
-             </li>
-             <li>
-               <label for="mail">Correo electrónico:</label>
-               <input type="email" id="email" name="mail"><p id="menssage2"></p> 
-             </li>
-             <li>
-               <label for="msg">Mensaje:</label>
-               <textarea id="msg" name="msg"></textarea><p id="menssage3"></p> 
-             </li>
+              <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <p id="menssage1"></p>
+
+              </li>
+              <li>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="email" name="mail">
+                <p id="menssage2"></p>
+              </li>
+              <li>
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="msg"></textarea>
+                <p id="menssage3"></p>
+              </li>
             </ul>
             <li class="boton-principal">
               <button type="submit">Enviar</button>
             </li>
-           </form>
-<a href="mailto:fiocchiv@gmail.com" id="idform"></a>
+          </form>
         </div>
       </div>
-        
-    </main>
-
-    <footer class="footer">
-        <div class="contenedor-footer">
-          <img src="imagenes/logo-footer.png" alt="logo-footer" class="logo-footer">
-          <div class="redes">
-            <div class="icono-redes">
-              <span><i class="fa-brands fa-instagram"></i></span>
-            </div>
-            <div class="icono-redes">
-              <span><i class="fa-brands fa-twitter"></i></span>
-            </div>
-            <div class="icono-redes">
-              <span><i class="fa-brands fa-tiktok"></i></span>
-            </div>
-          </div>
+    </div>
+  </main>
+  <br>
+  <br>
+  <footer class="footer">
+    <div class="contenedor-footer">
+      <img src="imagenes/logo-footer.png" alt="logo-footer" class="logo-footer">
+      <div class="redes">
+        <div class="icono-redes">
+          <span><i class="fa-brands fa-instagram"></i></span>
         </div>
-        
-    </footer>
-<script src="/validaciones/validacion.js"></script>
-<script src="/envioForm/envioForm.js"></script>
-  </body>
+        <div class="icono-redes">
+          <span><i class="fa-brands fa-twitter"></i></span>
+        </div>
+        <div class="icono-redes">
+          <span><i class="fa-brands fa-tiktok"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0474b9bded.js"></script>
+  <script src="/validaciones/validacion.js"></script>
+  <script src="/envioForm/envioForm.js"></script>
+</body>
+
 </html>

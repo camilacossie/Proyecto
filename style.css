@@ -219,6 +219,13 @@ i{
 
 /*Estilo pagina de contacto*/
 
+.contacto-div {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 form {
     margin: 0 auto;
     width: 400px;
