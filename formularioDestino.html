@@ -36,38 +36,64 @@
   </header>
 
   <main>
-    <div class="contacto-div">
+    <div>
       <div class="titulo">
-        <h1>Contacto</h1>
-        <div class="formulario">
-          <form action="https://formspree.io/f/mzbwjzln" method="POST" onsubmit="return validacion();" id="form"
-            name="form">
+        <h1>Calcular viaje</h1>
+        <div class="form-Destino">
+          <form action="" onsubmit="return calculoValor ();" id="form-Destino"
+            name="form-Destino">
             <ul>
               <li>
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name">
-                <p id="menssage1"></p>
-
+                <p id="msgName"></p>
               </li>
               <li>
                 <label for="mail">Correo electrónico:</label>
                 <input type="email" id="email" name="mail">
-                <p id="menssage2"></p>
+                <p id="msgEmail"></p>
               </li>
               <li>
-                <label for="msg">Mensaje:</label>
-                <textarea id="msg" name="msg"></textarea>
-                <p id="menssage3" ></p>
+                <label for="destinos">Destino</label>
+                <select name="destinos" id="destino">
+                    <option value="Bariloche">Bariloche</option>
+                    <option value="El-Calafate">El Calafate</option>
+                    <option value="El-Chalten">El Chalten</option>
+                    <option value="Ushuaia">Ushuaia</option>
+                    <option value="San-Martin-de-los-Andes">San Martin de los Andes</option>
+                  </select>
+                <p id="msgDestino" ></p>
               </li>
+              <li>
+                <label for="adulto">Cantidad de adultos</label>
+                <input type="number" min="0" name="adultos" id="adultos">
+                <p id="msgAdultos" ></p>
+              </li>
+              <li>
+                <label for="niños">Cantidad de niños (hasta 13 años inc)</label>
+                <input type="number" min="0" name="niños" id="niños">
+                <p id="msgNiños"></p>
+              </li>
+              <li>
+                <label for="alojamiento"> Tipo de Alojamiento </label>
+              <select name="alojamiento" id="alojamiento">
+                <option value="Cabaña"> Cabaña </option>
+                <option value="Hotel"> Hotel </option>
+              </select>
+            <p id="msgAlojamiento" ></p>
+            <p id="msgCalculo" ></p>
+          </li>
             </ul>
             <li class="boton-principal">
-              <button type="submit">Enviar</button>
+              <button type="submit">Calcular</button>
             </li>
+           
           </form>
         </div>
       </div>
     </div>
   </main>
+
   <br>
   <br>
   <footer class="footer">
@@ -89,6 +115,9 @@
   <script src="https://kit.fontawesome.com/0474b9bded.js"></script>
   <script src="/validaciones/validacion.js"></script>
   <script src="/envioForm/envioForm.js"></script>
+
+  <script src="/calcularValor.js"></script> 
+
 </body>
 
 </html>
