@@ -117,20 +117,7 @@ display: none;
     height: 500px;
 }
 
-@keyframes slide{
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
 
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    95% {margin-left: -300%;}
-
-}
 .nosotros{
     width: 70%;
     margin-left: 15%;
@@ -219,8 +206,10 @@ a {
   height: 125px;
 }
 
-.contenedor-footer .logo-footer{
-  height: 125px;
+.logo-footer {
+  width: 125px;
+  display: flex;
+  margin-left: 25px;
 }
 
 
