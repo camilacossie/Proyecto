@@ -183,6 +183,14 @@ i {
 
 /*Comienza estilo pagina Destinos*/
 
+.titulo-dest {
+ font-size: 40px;
+ text-align: center;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-display: flex;
+ font-style: unset;
+}
+
 .contenedor .destino {
   padding-bottom: 20px;
   margin-left: 15%;
@@ -213,12 +221,12 @@ i {
 }
 
 .btn-calcular {
-  font-size: xx-large;
+  font-size: large;
   border-radius: 8px;
   background-color: rgb(186, 221, 221);
   border-color: rgb(186, 221, 221);
   font-family:'Roboto', sans-serif;
-  margin-left: 80%;
+  margin-left: 44%;
 }
 
 /*Estilo pagina de contacto*/
@@ -250,9 +258,17 @@ form li + li {
 
 label {
   /* Tamaño y alineación uniforme */
-  display: inline-block;
-  width: 90px;
+
   text-align: right;
+   justify-content: center;
+   text-align: center;
+
+}
+ 
+label.msg  {
+    align-items: center;
+    text-align: center;
+    vertical-align: top
 }
 
 input,
@@ -261,6 +277,7 @@ textarea {
   width: 300px;
   box-sizing: border-box;
   border: 1px solid #999;
+  
 }
 
 input:focus textarea:focus {
@@ -269,6 +286,7 @@ input:focus textarea:focus {
 
 textarea {
   height: 5em;
+  justify-content: center;
 }
 
 .boton-principal button {
@@ -278,4 +296,8 @@ textarea {
 
 button {
   list-style: none;
+}
+.btns {
+justify-content: center;
+    text-align: center;
 }

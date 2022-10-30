@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="reset.css/reset.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="/validaciones/styleValidaciones.css" />
-  <link rel="stylesheet" href="envioForm/saludo.html" />
+  <link rel="stylesheet" href="formDestino/formCalculo.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <title>Turismo Patagonia</title>
 </head>
 
@@ -36,23 +35,22 @@
   </header>
 
   <main>
-    <div>
+    <div class="contenedor">
       <div class="titulo">
         <h1>Calcular viaje</h1>
         <div class="form-Destino">
-          <form action="" onsubmit="return calculoValor ();" id="form-Destino"
-            name="form-Destino">
+          <form action="" onsubmit="return calculoValor ();" id="form-Destino" name="form-Destino">
             <ul>
               <li>
                 <label for="destinos">Destino</label>
                 <select name="destinos" id="destinos">
-                    <option value="Bariloche">Bariloche</option>
-                    <option value="El-Calafate">El Calafate</option>
-                    <option value="El-Chalten">El Chalten</option>
-                    <option value="Ushuaia">Ushuaia</option>
-                    <option value="San-Martin-de-los-Andes">San Martin de los Andes</option>
-                  </select>
-                <p id="msgDestino" ></p>
+                  <option value="Bariloche">Bariloche</option>
+                  <option value="El-Calafate">El Calafate</option>
+                  <option value="El-Chalten">El Chalten</option>
+                  <option value="Ushuaia">Ushuaia</option>
+                  <option value="San-Martin-de-los-Andes">San Martin de los Andes</option>
+                </select>
+                <p id="msgDestino"></p>
               </li>
               <li>
                 <label for="adulto">Cantidad de adultos</label>
@@ -66,20 +64,25 @@
               </li>
               <li>
                 <label for="alojamiento"> Tipo de Alojamiento </label>
-              <select name="alojamiento" id="alojamiento">
-                <option value="Cabaña"> Cabaña </option>
-                <option value="Hotel"> Hotel </option>
-              </select>
-            <p id="msgAlojamiento" ></p>
-            <label for="msgCalculo" name="msgCalculo"></label>
-            <p id="msgCalculo"></p>
-            <p id="valorTotal"></p>
-          </li>
+                <select name="alojamiento" id="alojamiento">
+                  <option value="Cabaña"> Cabaña </option>
+                  <option value="Hotel"> Hotel </option>
+                </select>
+       <br>
+                <label for="msgCalculo" name="msgCalculo"></label>
+                <p id="msgCalculo"></p>
+                <p id="valorTotal"></p>
+              </li>
             </ul>
-            <li class="boton-principal">
-              <button type="submit">Calcular</button>
-            </li>
-           
+            <br>
+            <br>
+           <button class="boton-principal" type="submit">Calcular</button>
+           <button>
+           <a class="btn-info" href="/contacto.html" >Mas informacion</a>
+          </button>
+          <button>
+            <a href="/index.html"> Vovler al inicio</a> </button>
+
           </form>
         </div>
       </div>
@@ -105,10 +108,7 @@
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/0474b9bded.js"></script>
-  <script src="/validaciones/validacion.js"></script>
-  <script src="/envioForm/envioForm.js"></script>
-
-  <script src="/calcularValor.js"></script> 
+  <script src="/formDestino/calcularValor.js"></script>
 
 </body>
 

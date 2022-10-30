@@ -40,7 +40,7 @@
       <div class="titulo">
         <h1>Contacto</h1>
         <div class="formulario">
-          <form action="https://formspree.io/f/mzbwjzln" method="POST" onsubmit="return validacion();" id="form"
+          <form action="https://formsubmit.co/76faf7e62ff3636958c185aa0e9b19 ff " method="POST" onsubmit="return validacion();" id="form"
             name="form">
             <ul>
               <li>
@@ -55,14 +55,26 @@
                 <p id="menssage2"></p>
               </li>
               <li>
-                <label for="msg">Mensaje:</label>
+                <label for="temas">Tema de Consulta:</label>
+                <select name="temas" id="temas">
+                  <option value="Consulta-general"> Consulta General</option>
+                  <option value="Contratar-Servicio"> Contratar Servicio </option>
+                  <option value="Servicios-Extras"> Servicios Extras </option>
+                </select>
+              </li>
+              <li>
+                <label for="msg" class="msg">Mensaje:</label>
                 <textarea id="msg" name="msg"></textarea>
                 <p id="menssage3" ></p>
               </li>
             </ul>
-            <li class="boton-principal">
-              <button type="submit">Enviar</button>
-            </li>
+            <br>
+            <div class="btns">
+              <button class="boton-principal" type="submit">Enviar</button>
+              <button> <a href="/index.html">
+                Volver al Inicio
+              </a></button>
+            </div>
           </form>
         </div>
       </div>

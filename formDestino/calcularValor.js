@@ -86,7 +86,7 @@ function calculoValor() {
     } else {
       if (alojamiento === "Hotel") {
         if (adultos > 0 && niños > 0) {
-          valorTotal = adultos * 4.000 + niños * 1.500 + 97.000;
+          valorTotal = adultos * 4.000 + niños * 1.500 + 97.052;
           document.getElementById("valorTotal").value = valorTotal;
           document.getElementById("msgCalculo").innerHTML =
             "El valor del viaje es de $ " +
@@ -96,7 +96,7 @@ function calculoValor() {
           return false;
         } else {
           if (adultos > 0 && niños <= 0) {
-            valorTotal = adultos * 4.000 + 97.000;
+            valorTotal = adultos * 4.000 + 97.052;
             document.getElementById("valorTotal").value = valorTotal;
             document.getElementById("msgCalculo").innerHTML =
               "El valor del viaje es de $ " +
@@ -114,7 +114,7 @@ function calculoValor() {
   if (destino === "El-Chalten") {
     if (alojamiento === "Cabaña") {
       if (adultos > 0 && niños > 0) {
-        valorTotal = adultos * 4.000 + niños * 1.500 + 120.000;
+        valorTotal = adultos * 4.000 + niños * 1.500 + 120.061;
         document.getElementById("valorTotal").value = valorTotal;
         document.getElementById("msgCalculo").innerHTML =
           "El valor del viaje es de $ " +
@@ -124,7 +124,7 @@ function calculoValor() {
         return false;
       } else {
         if (adultos > 0 && niños <= 0) {
-          valorTotal = adultos * 4.000 + 120.000;
+          valorTotal = adultos * 4.000 + 120.061;
           document.getElementById("valorTotal").value = valorTotal;
           document.getElementById("msgCalculo").innerHTML =
             "El valor del viaje es de $ " +
@@ -137,7 +137,7 @@ function calculoValor() {
     } else {
       if (alojamiento === "Hotel") {
         if (adultos > 0 && niños > 0) {
-          valorTotal = adultos * 4.000 + niños * 1.500 + 150.000;
+          valorTotal = adultos * 4.000 + niños * 1.500 + 150.013;
           document.getElementById("valorTotal").value = valorTotal;
           document.getElementById("msgCalculo").innerHTML =
             "El valor del viaje es de $ " +
@@ -147,7 +147,7 @@ function calculoValor() {
           return false;
         } else {
           if (adultos > 0 && niños <= 0) {
-            valorTotal = adultos * 4.000 + 150.000;
+            valorTotal = adultos * 4.000 + 150.013;
             document.getElementById("valorTotal").value = valorTotal;
             document.getElementById("msgCalculo").innerHTML =
               "El valor del viaje es de $ " +
@@ -164,7 +164,7 @@ function calculoValor() {
   if (destino === "Ushuaia") {
     if (alojamiento === "Cabaña") {
       if (adultos > 0 && niños > 0) {
-        valorTotal = adultos * 4.000 + niños * 1.500 + 132.000;
+        valorTotal = adultos * 4.000 + niños * 1.500 + 132.045;
         document.getElementById("valorTotal").value = valorTotal;
         document.getElementById("msgCalculo").innerHTML =
           "El valor del viaje es de $ " +
@@ -174,7 +174,7 @@ function calculoValor() {
         return false;
       } else {
         if (adultos > 0 && niños <= 0) {
-          valorTotal = adultos * 4.000 + 132.000;
+          valorTotal = adultos * 4.000 + 132.045;
           document.getElementById("valorTotal").value = valorTotal;
           document.getElementById("msgCalculo").innerHTML =
             "El valor del viaje es de $ " +
@@ -187,7 +187,7 @@ function calculoValor() {
     } else {
       if (alojamiento === "Hotel") {
         if (adultos > 0 && niños > 0) {
-          valorTotal = adultos * 4.000 + niños * 1.500 + 148.000;
+          valorTotal = adultos * 4.000 + niños * 1.500 + 148.032;
           document.getElementById("valorTotal").value = valorTotal;
           document.getElementById("msgCalculo").innerHTML =
             "El valor del viaje es de $ " +
@@ -197,7 +197,7 @@ function calculoValor() {
           return false;
         } else {
           if (adultos > 0 && niños <= 0) {
-            valorTotal = adultos * 4.000 + 148.000;
+            valorTotal = adultos * 4.000 + 148.032;
             document.getElementById("valorTotal").value = valorTotal;
             document.getElementById("msgCalculo").innerHTML =
               "El valor del viaje es de $ " +
@@ -214,7 +214,7 @@ function calculoValor() {
   if (destino === "San-Martin-de-los-Andes") {
     if (alojamiento === "Cabaña") {
       if (adultos > 0 && niños > 0) {
-        valorTotal = adultos * 4.000 + niños * 1.500 + 50.000;
+        valorTotal = adultos * 4.000 + niños * 1.500 + 50.021;
         document.getElementById("valorTotal").value = valorTotal;
         document.getElementById("msgCalculo").innerHTML =
           "El valor del viaje es de $ " +
@@ -224,7 +224,7 @@ function calculoValor() {
         return false;
       } else {
         if (adultos > 0 && niños <= 0) {
-          valorTotal = adultos * 4.000 + 50.000;
+          valorTotal = adultos * 4.000 + 50.021;
           document.getElementById("valorTotal").value = valorTotal;
           document.getElementById("msgCalculo").innerHTML =
             "El valor del viaje es de $ " +
@@ -237,7 +237,7 @@ function calculoValor() {
     } else {
       if (alojamiento === "Hotel") {
         if (adultos > 0 && niños > 0) {
-          valorTotal = adultos * 4.000 + niños * 1.500 + 90.000;
+          valorTotal = adultos * 4.000 + niños * 1.500 + 90.014;
           document.getElementById("valorTotal").value = valorTotal;
           document.getElementById("msgCalculo").innerHTML =
             "El valor del viaje es de $ " +
@@ -247,7 +247,7 @@ function calculoValor() {
           return false;
         } else {
           if (adultos > 0 && niños <= 0) {
-            valorTotal = adultos * 4.000 + 90.000;
+            valorTotal = adultos * 4.000 + 90.014;
             document.getElementById("valorTotal").value = valorTotal;
             document.getElementById("msgCalculo").innerHTML =
               "El valor del viaje es de $ " +
