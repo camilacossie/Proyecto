@@ -62,11 +62,12 @@ body{
     display: flex;
     width: 100%;
     max-width: 1200%;
-    height: 430px;
+    height: 900px;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    align-items: center;
 }
 
 .contenedor-cards .card{
