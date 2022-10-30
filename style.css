@@ -2,6 +2,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+   
 
 .contenedor-header{
     display: flex;
@@ -9,6 +10,8 @@ body {
     background-color: #A6D1D8;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    
 }
 
 .logo {
@@ -91,6 +94,7 @@ display: none;
         text-align: right;
     }
 }
+
 
 /* Estilo carrusel */
 
@@ -285,24 +289,29 @@ i {
 
 /*Comienza estilo pagina Destinos*/
 
+.titulo-dest{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 #contenedor-destinos{
     display: flex;
     justify-content: space-evenly;
-    width: 1280px;
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     column-gap: 48px;
     row-gap: 48px;
-        
 }
 .contenedor .destino{
-    max-width: 400px;
+    max-width: 25em;
     
 }
 
 .contenedor .destino:hover{
-    transform: scale(122%);
+    transform: scale(110%);
 
 }
 
@@ -317,8 +326,8 @@ i {
 }
 
 .contenedor .destino img {
-  width: 330px;
-  height: 220px;
+  width: 20.6em;
+  height: 13.75em;
   padding-bottom: 20px;
 }
 
@@ -338,6 +347,29 @@ i {
 
 }
 
+@media screen and (max-width: 640px) {
+    #contenedor-destinos{
+        display: flex;
+        width: 640px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 24px;
+        margin-left: 30px;
+          
+    }    
+}
+
+@media screen and (min-width: 640px) and (max-width:1200){
+    #contenedor-destinos{
+        display: flex;
+        width: 1200px;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+                    
+    }
+}
 /*Estilo pagina de contacto*/
 
 .contacto-div {
