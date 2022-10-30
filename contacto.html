@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -39,36 +40,52 @@
           </nav>
         </div>
       </div>
+    </div>
     </header>
 
-    <main>
+  <main>
+    <div class="contacto-div">
       <div class="titulo">
         <h1>Contacto</h1>
         <div class="formulario">
-          <form action="" method="post">
+          <form action="https://formsubmit.co/76faf7e62ff3636958c185aa0e9b19 ff " method="POST" onsubmit="return validacion();" id="form"
+            name="form">
             <ul>
-             <li>
-               <label for="name">Nombre:</label>
-               <input type="text" id="name" name="user_name">
-             </li>
-             <li>
-               <label for="mail">Correo electrónico:</label>
-               <input type="email" id="mail" name="user_mail">
-             </li>
-             <li>
-               <label for="msg">Mensaje:</label>
-               <textarea id="msg" name="user_message"></textarea>
-             </li>
+              <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <p id="menssage1"></p>
+
+              </li>
+              <li>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="email" name="mail">
+                <p id="menssage2"></p>
+              </li>
+              <li>
+                <label for="temas">Tema de Consulta:</label>
+                <select name="temas" id="temas">
+                  <option value="Consulta-general"> Consulta General</option>
+                  <option value="Contratar-Servicio"> Contratar Servicio </option>
+                  <option value="Servicios-Extras"> Servicios Extras </option>
+                </select>
+              </li>
+              <li>
+                <label for="msg" class="msg">Mensaje:</label>
+                <textarea id="msg" name="msg"></textarea>
+                <p id="menssage3" ></p>
+              </li>
             </ul>
-            <li class="boton-principal">
-              <button type="submit">Enviar</button>
-            </li>
-           </form>
-
-
+            <br>
+            <div class="btns">
+              <button class="boton-principal" type="submit">Enviar</button>
+              <button> <a href="/index.html">
+                Volver al Inicio
+              </a></button>
+            </div>
+          </form>
         </div>
-      </div>
-        
+      </div>       
     </main>
 
     <footer class="footer">
@@ -85,8 +102,14 @@
               <span><i class="fa-brands fa-tiktok"></i></span>
             </div>
           </div>
+
         </div>
-        
-    </footer>
-  </body>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0474b9bded.js"></script>
+  <script src="/validaciones/validacion.js"></script>
+  <script src="/envioForm/envioForm.js"></script>
+</body>
+
 </html>

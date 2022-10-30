@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css/reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="formDestino/formCalculo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>Turismo Patagonia</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="contenedor-header">
+      <div class="encabezado">
+        <h1><img src="imagenes/logo-header.png" class="logo" /></h>
+      </div>
+
+      <div class="menu-navegacion">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="contenedor">
+      <div class="titulo">
+        <h1>Calcular viaje</h1>
+        <div class="form-Destino">
+          <form action="" onsubmit="return calculoValor ();" id="form-Destino" name="form-Destino">
+            <ul>
+              <li>
+                <label for="destinos">Destino</label>
+                <select name="destinos" id="destinos">
+                  <option value="Bariloche">Bariloche</option>
+                  <option value="El-Calafate">El Calafate</option>
+                  <option value="El-Chalten">El Chalten</option>
+                  <option value="Ushuaia">Ushuaia</option>
+                  <option value="San-Martin-de-los-Andes">San Martin de los Andes</option>
+                </select>
+                <p id="msgDestino"></p>
+              </li>
+              <li>
+                <label for="adulto">Cantidad de adultos</label>
+                <input type="number" min="0" name="adultos" id="adultos">
+                <p id="msgAdultos"></p>
+              </li>
+              <li>
+                <label for="niños">Cantidad de niños (hasta 13 años inc)</label>
+                <input type="number" min="0" name="niños" id="niños">
+                <p id="msgNiños"></p>
+              </li>
+              <li>
+                <label for="alojamiento"> Tipo de Alojamiento </label>
+                <select name="alojamiento" id="alojamiento">
+                  <option value="Cabaña"> Cabaña </option>
+                  <option value="Hotel"> Hotel </option>
+                </select>
+       <br>
+                <label for="msgCalculo" name="msgCalculo"></label>
+                <p id="msgCalculo"></p>
+                <p id="valorTotal"></p>
+              </li>
+            </ul>
+            <br>
+            <br>
+           <button class="boton-principal" type="submit">Calcular</button>
+           <button>
+           <a class="btn-info" href="/contacto.html" >Mas informacion</a>
+          </button>
+          <button>
+            <a href="/index.html"> Vovler al inicio</a> </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <br>
+  <br>
+  <footer class="footer">
+    <div class="contenedor-footer">
+      <img src="imagenes/logo-footer.png" alt="logo-footer" class="logo-footer">
+      <div class="redes">
+        <div class="icono-redes">
+          <span><i class="fa-brands fa-instagram"></i></span>
+        </div>
+        <div class="icono-redes">
+          <span><i class="fa-brands fa-twitter"></i></span>
+        </div>
+        <div class="icono-redes">
+          <span><i class="fa-brands fa-tiktok"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0474b9bded.js"></script>
+  <script src="/formDestino/calcularValor.js"></script>
+
+</body>
+
+</html>
