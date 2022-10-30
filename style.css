@@ -108,7 +108,7 @@ body {
 
 .carrusel {
   width: 95%;
-  margin: auto;
+  height: auto;
 }
 
 .carrusel ul {
@@ -130,7 +130,7 @@ body {
 
 .carrusel img {
  width: 100%;
- height: 300px;
+ height: 330px;
 }
 
 @keyframes cambio {
@@ -320,32 +320,6 @@ i {
 
 /*Comienza estilo pagina Destinos*/
 
-<<<<<<< HEAD
-.titulo-dest{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-#contenedor-destinos{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    column-gap: 48px;
-    row-gap: 48px;
-}
-.contenedor .destino{
-    max-width: 25em;
-    
-}
-
-.contenedor .destino:hover{
-    transform: scale(110%);
-
-=======
 #contenedor-destinos {
   display: flex;
   justify-content: space-evenly;
@@ -362,7 +336,6 @@ i {
 
 .contenedor .destino:hover {
   transform: scale(122%);
->>>>>>> 2582d13218247092801a62cb412dbb4dd2f87ccf
 }
 
 .contenedor .destino:hover {
