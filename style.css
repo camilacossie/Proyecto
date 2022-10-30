@@ -69,16 +69,7 @@ body {
     align-items: center;
 }
 
-.contenedor-cards {
-  display: flex;
-  width: 100%;
-  max-width: 1200%;
-  height: 430px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  padding-bottom: 30px;
-}
+
 
 
 
