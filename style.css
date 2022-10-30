@@ -99,7 +99,6 @@ display: none;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
-    animation: slide 16s infinite alternate ease-in-out;
 }
 .carrusel ul{
     display: flex;
@@ -108,9 +107,6 @@ display: none;
 
 }
 
-.carrusel li{
-    list-style: none;
-}
 
 .carrusel img{
     width: 1280px;
