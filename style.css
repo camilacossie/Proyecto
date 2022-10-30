@@ -9,18 +9,6 @@
   --tipo-principal: Helvetica, Arial, sans-serif;
 }
 
-<<<<<<< HEAD
-   
-
-.contenedor-header{
-    display: flex;
-    text-align: center;
-    background-color: #A6D1D8;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    
-=======
 body {
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
@@ -32,7 +20,6 @@ body {
   background-color: #a6d1d8;
   align-items: center;
   justify-content: space-between;
->>>>>>> 2582d13218247092801a62cb412dbb4dd2f87ccf
 }
 
 .logo {
