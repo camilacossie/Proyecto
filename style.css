@@ -219,6 +219,10 @@ a {
   height: 125px;
 }
 
+.contenedor-footer .logo-footer{
+  height: 125px;
+}
+
 
 .logo-footer:hover{
     transform: translateX(15px);
