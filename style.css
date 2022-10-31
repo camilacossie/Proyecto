@@ -302,6 +302,10 @@ a {
   padding-bottom: 20px;
 }
 
+.contenedor .actividad p {
+  width: 330px;
+}
+
 i {
   padding-right: 10px;
 }
