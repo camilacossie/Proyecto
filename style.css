@@ -323,7 +323,7 @@ i {
 #contenedor-destinos {
   display: flex;
   justify-content: space-evenly;
-  width: 1280px;
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
