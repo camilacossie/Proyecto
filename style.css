@@ -78,7 +78,6 @@ body {
   #hamburguesa:checked ~ label #menu-cerrar {
     display: block;
     position: absolute;
-    margin-left: 40%;
   }
 
   header .menu-navegacion nav {
